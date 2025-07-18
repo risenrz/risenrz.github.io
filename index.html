@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image to PDF Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📸 Image to PDF Converter</h1>
+    <h2>Convert Images to PDF Online</h2>
+<p>This tool helps you easily convert your JPG or PNG images into a single PDF file in seconds. It’s free, secure, and requires no signup. You can convert multiple images into one PDF document directly in your browser.</p>
+  </header>
+
+  <main>
+    <div class="upload-box" onclick="document.getElementById('imageInput').click()">
+      <p>Click or Drag & Drop Images Here</p>
+      <input type="file" id="imageInput" multiple accept="image/*" hidden />
+    </div>
+
+    <div id="preview"></div>
+
+    <button id="convertBtn">📄 Convert to PDF</button>
+  </main>
+
+  <footer>
+    <p>Made by Neeraj ❤</p>
+    <div class="link-group">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
